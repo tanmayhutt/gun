@@ -49,9 +49,8 @@ header h1 {
     -webkit-text-stroke: 4px #111;
     text-shadow: 12px 12px 0px #111;
     letter-spacing: 6px;
-    font-family: 'Arial Black', 'Impact', sans-serif;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', 'Nunito', sans-serif;
     display: inline-block;
-    transform: rotate(-3deg);
     transition: transform 0.2s ease;
 }
 
