@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gun - The Official Rulebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GUN</h1>
+            <p class="subtitle">The Official 6-Player High Stakes Card Game</p>
+        </header>
+
+        <main id="rules-container">
+            <section class="rule-card setup">
+                <h2>Players & Setup</h2>
+                <div class="rule-content">
+                    <ul>
+                        <li>Take a standard 52-card deck and <strong>remove all four 2s</strong>, leaving a <strong>48-card deck</strong>.</li>
+                        <li>The game is played by <strong>6 players</strong> divided into <strong>2 teams</strong> (3 players per team).</li>
+                        <li><strong>Team Selection:</strong> Cards are dealt anti-clockwise. The first three players to receive a <strong>Jack</strong> form Team A, and the remaining three form Team B.</li>
+                        <li>Players sit in a circle in an alternating order, ensuring that every player is seated between two members of the opposing team.</li>
+                        <li><strong>First Dealer:</strong> The deck is shuffled again and dealt anti-clockwise. The first player to receive a <strong>Jack</strong> becomes the first dealer.</li>
+                        <li><strong>Game Flow:</strong> All dealing and gameplay strictly proceeds in an <strong>anti-clockwise</strong> direction.</li>
+                        <li>The card hierarchy follows standard rules (Ace is highest, down to 3).</li>
+                    </ul>
+                    <div class="demo-container">
+                        <div class="playing-card black removed"><div class="card-top">2♠</div><div class="card-center">♠</div><div class="card-bottom">2♠</div></div>
+                        <div class="playing-card red removed"><div class="card-top">2♥</div><div class="card-center">♥</div><div class="card-bottom">2♥</div></div>
+                        <div class="playing-card black removed"><div class="card-top">2♣</div><div class="card-center">♣</div><div class="card-bottom">2♣</div></div>
+                        <div class="playing-card red removed"><div class="card-top">2♦</div><div class="card-center">♦</div><div class="card-bottom">2♦</div></div>
+                        <div class="demo-caption">The standard setup requires the removal of all '2' cards.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rule-card dealing">
+                <h2>Dealing & "The Gun"</h2>
+                <div class="rule-content">
+                    <ul>
+                        <li>The 48 cards are shuffled thoroughly. Initially, each player is dealt a batch of exactly <strong>4 cards</strong>.</li>
+                        <li>A player from the team opposite the dealer gets to choose the Trump by selecting one card from their hand and keeping it face down (blind).</li>
+                        <li><strong>The "Gun" Rule:</strong> If any player feels their hand is exceptionally strong, they can declare <strong>"Gun"</strong>. They must sequentially open their cards to attempt to win the entire round.</li>
+                        <li>If no one declares Gun, the remaining 24 cards are dealt out. Each player now has <strong>8 cards</strong>.</li>
+                    </ul>
+                    <div class="demo-container">
+                        <div class="playing-card black"><div class="card-top">A♠</div><div class="card-center">♠</div><div class="card-bottom">A♠</div></div>
+                        <div class="playing-card red"><div class="card-top">K♥</div><div class="card-center">♥</div><div class="card-bottom">K♥</div></div>
+                        <div class="playing-card black"><div class="card-top">10♣</div><div class="card-center">♣</div><div class="card-bottom">10♣</div></div>
+                        <div class="playing-card red"><div class="card-top">8♦</div><div class="card-center">♦</div><div class="card-bottom">8♦</div></div>
+                        <div style="width: 20px;"></div>
+
+                        <!-- Interactive Flip Card -->
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front"></div>
+                                <div class="flip-card-back red">
+                                    <div class="card-top">A♥</div>
+                                    <div class="card-center">♥</div>
+                                    <div class="card-bottom">A♥</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-caption">Hover over the face-down Blind Trump card to reveal it.</div>
+                    </div>
+
+                    <div class="demo-container" style="gap: 0.5rem;">
+                        <div class="playing-card black" style="transform: translateY(-5px);"><div class="card-top">A♠</div><div class="card-center">♠</div><div class="card-bottom">A♠</div></div>
+                        <div class="playing-card black" style="transform: translateY(-3px);"><div class="card-top">K♠</div><div class="card-center">♠</div><div class="card-bottom">K♠</div></div>
+                        <div class="playing-card black" style="transform: translateY(-1px);"><div class="card-top">Q♠</div><div class="card-center">♠</div><div class="card-bottom">Q♠</div></div>
+                        <div class="playing-card black" style="transform: translateY(1px);"><div class="card-top">J♠</div><div class="card-center">♠</div><div class="card-bottom">J♠</div></div>
+                        <div class="playing-card black" style="transform: translateY(2px);"><div class="card-top">10♠</div><div class="card-center">♠</div><div class="card-bottom">10♠</div></div>
+                        <div class="playing-card red" style="transform: translateY(1px);"><div class="card-top">A♥</div><div class="card-center">♥</div><div class="card-bottom">A♥</div></div>
+                        <div class="playing-card red" style="transform: translateY(-1px);"><div class="card-top">K♥</div><div class="card-center">♥</div><div class="card-bottom">K♥</div></div>
+                        <div class="playing-card black" style="transform: translateY(-4px);"><div class="card-top">A♣</div><div class="card-center">♣</div><div class="card-bottom">A♣</div></div>
+                        <div class="demo-caption">A player declaring "Gun" must have an exceptionally strong hand (like the one above) to win all 8 tricks.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rule-card second-deal">
+                <h2>The Play</h2>
+                <div class="rule-content">
+                    <ul>
+                        <li>The person who chose the blind Trump card starts the game by playing their first card.</li>
+                        <li>Play continues sequentially around the table. Everyone must follow the suit led if they have it (similar to standard trick-taking conventions).</li>
+                    </ul>
+
+                    <div class="demo-container">
+                        <div class="playing-card black" style="transform: rotate(-5deg); z-index: 2;"><div class="card-top">10♣</div><div class="card-center">♣</div><div class="card-bottom">10♣</div></div>
+                        <div class="playing-card black" style="transform: rotate(5deg) translateY(-10px); z-index: 1;"><div class="card-top">K♣</div><div class="card-center">♣</div><div class="card-bottom">K♣</div></div>
+                        <div class="playing-card black" style="transform: rotate(15deg) translate(-10px, -20px); z-index: 3; box-shadow: 0 0 0 4px var(--accent-yellow), 8px 12px 0px var(--card-border);"><div class="card-top">A♣</div><div class="card-center">♣</div><div class="card-bottom">A♣</div></div>
+                        <div class="demo-caption">Card hierarchy follows standard rules. The Ace is the highest card and wins the trick.</div>
+                    </div>
+
+                    <div class="demo-container">
+                        <div class="playing-card black" style="transform: rotate(-10deg) translate(10px, 10px);"><div class="card-top">A♠</div><div class="card-center">♠</div><div class="card-bottom">A♠</div></div>
+                        <div class="playing-card black" style="transform: rotate(5deg);"><div class="card-top">10♠</div><div class="card-center">♠</div><div class="card-bottom">10♠</div></div>
+                        <div class="playing-card black" style="transform: rotate(-5deg);"><div class="card-top">K♠</div><div class="card-center">♠</div><div class="card-bottom">K♠</div></div>
+                        <div class="playing-card red" style="transform: rotate(15deg) translate(-10px, 10px);"><div class="card-top">7♥</div><div class="card-center">♥</div><div class="card-bottom">7♥</div></div>
+                        <div class="playing-card black" style="transform: rotate(-15deg);"><div class="card-top">8♠</div><div class="card-center">♠</div><div class="card-bottom">8♠</div></div>
+                        <div class="playing-card black" style="transform: rotate(10deg);"><div class="card-top">3♠</div><div class="card-center">♠</div><div class="card-bottom">3♠</div></div>
+                        <div class="demo-caption">A 6-card "Hand/Trick" played on the table. (One player couldn't follow Spades and threw a Heart!)</div>
+                    </div>
+                    <ul>
+                        <li>Since there are 8 cards per player, there will be exactly <strong>8 Hands (Tricks)</strong> played in a round.</li>
+                        <li><strong>Revealing the Trump:</strong> The Trump card remains blind until a player is unable to follow the suit that was led. At that point, they ask the player who chose the Trump to reveal it. Once flipped, that suit officially becomes Trump.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="rule-card scoring">
+                <h2>Scoring & Penalties</h2>
+                <div class="rule-content">
+                    <p class="scoring-intro">Points are considered penalties. Teams subtract points upon victory and accumulate points upon failure. Penalties are assigned directly to the current dealer.</p>
+                    <div class="scoring-grid">
+                        <div class="score-item">
+                            <h3>Trump Team</h3>
+                            <p>Target: <strong>5 Hands</strong></p>
+                            <p class="fail">Failure: +10 pts</p>
+                            <p class="success">Success: -10 pts</p>
+                        </div>
+                        <div class="score-item">
+                            <h3>Defending Team</h3>
+                            <p>Target: <strong>4 Hands</strong></p>
+                            <p class="fail">Failure: +5 pts</p>
+                            <p class="success">Success: -5 pts</p>
+                        </div>
+                        <div class="score-item">
+                            <h3>Gun (Trump Team)</h3>
+                            <p>Target: <strong>All Hands</strong></p>
+                            <p class="fail">Failure: +36 pts</p>
+                            <p class="success">Success: -36 pts</p>
+                        </div>
+                        <div class="score-item">
+                            <h3>Gun (Defending Team)</h3>
+                            <p>Target: <strong>All Hands</strong></p>
+                            <p class="fail">Failure: +18 pts</p>
+                            <p class="success">Success: -18 pts</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rule-card dealer">
+                <h2>The Dealer & "Getting Sold"</h2>
+                <div class="rule-content">
+                    <ul>
+                        <li>When a team reaches exactly <strong>0 points</strong>, the dealership moves to a member of the opposing team.</li>
+                        <li>If a dealer accumulates exactly <strong>48 points</strong>, they are declared <strong>"Sold"</strong>. The sold dealer must perform a penalty dare assigned by the rest of the players.</li>
+                    </ul>
+
+                    <div class="demo-container">
+                        <div class="playing-card black" style="position: relative;">
+                            <div class="card-top">48</div>
+                            <div class="card-center">☠️</div>
+                            <div class="card-bottom">48</div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-25deg); color: var(--fail); border: 5px solid var(--fail); padding: 5px 15px; font-weight: 900; font-size: 1.8rem; letter-spacing: 2px; border-radius: 8px; background: rgba(255,255,255,0.95); z-index: 10; box-shadow: 4px 4px 0px var(--card-border);">SOLD</div>
+                        </div>
+                        <div class="demo-caption">Accumulating exactly 48 points results in being "Sold". Time for a penalty dare!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="rule-card origin">
+                <h2>Origin of the Game</h2>
+                <div class="rule-content">
+                    <p>The game of <strong>Gun</strong> originated in Bhati Village in Madh Island, Mumbai, India. It spread to the rest of the world from the home of <a href="https://www.instagram.com/imran.mahatma/" target="_blank" rel="noopener noreferrer" class="profile-link">Imraan Rashid aka Mahatma</a>.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
