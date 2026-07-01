@@ -213,6 +213,7 @@ header {
     justify-content: space-between;
     padding: 8px;
     font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
     font-weight: 900;
     user-select: none;
     color: #111;
@@ -319,6 +320,7 @@ header {
     justify-content: space-between;
     padding: 8px;
     font-size: 1.1rem;
+    font-family: 'Arial', sans-serif;
     font-weight: 900;
 }
 
