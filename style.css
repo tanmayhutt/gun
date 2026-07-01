@@ -248,6 +248,7 @@ header {
 .card-top { align-self: flex-start; line-height: 1; }
 .card-center { align-self: center; font-size: 3.5rem; }
 .card-bottom { align-self: flex-end; transform: rotate(180deg); line-height: 1; }
+.small-suit { font-size: 1.5em; margin-left: 1px; }
 
 .demo-caption {
     text-align: center;
