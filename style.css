@@ -40,22 +40,12 @@ header {
     margin-bottom: 4rem;
 }
 
-header h1 {
-    font-size: 7rem;
-    font-weight: 900;
+.main-logo {
+    max-width: 250px;
+    height: auto;
     margin-bottom: 0.5rem;
-    color: white;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 4px #111;
-    text-shadow: 12px 12px 0px #111;
-    letter-spacing: 6px;
-    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', 'Nunito', sans-serif;
     display: inline-block;
-    transition: transform 0.2s ease;
-}
-
-header h1:hover {
-    transform: rotate(0deg) scale(1.05);
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.1));
 }
 
 .subtitle {
