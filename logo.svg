@@ -20,9 +20,6 @@
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="#DFF2FD" rx="20" />
-
   <!-- The Text -->
   <text x="50%" y="55%" 
         dominant-baseline="middle" 
