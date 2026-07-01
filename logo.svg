@@ -1,0 +1,38 @@
+<svg viewBox="0 0 350 140" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Filter for the UNO-style thick stroke and hard drop shadow -->
+    <filter id="uno-style" x="-20%" y="-20%" width="150%" height="150%">
+      <!-- 1. Create a thicker version of the text alpha for the stroke -->
+      <feMorphology in="SourceAlpha" operator="dilate" radius="4" result="strokeAlpha" />
+      <!-- Color it black -->
+      <feFlood flood-color="#111" result="blackColor" />
+      <feComposite in="blackColor" in2="strokeAlpha" operator="in" result="stroke" />
+      
+      <!-- 2. Create the hard drop shadow by offsetting the stroke -->
+      <feOffset in="stroke" dx="10" dy="10" result="shadow" />
+      
+      <!-- 3. Merge them all together: Shadow -> Stroke -> Original White Text -->
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="stroke" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- The Text -->
+  <text x="50%" y="55%" 
+        dominant-baseline="middle" 
+        text-anchor="middle" 
+        font-family="'Arial Rounded MT Bold', 'Nunito', sans-serif" 
+        font-size="110px" 
+        font-weight="900" 
+        fill="white" 
+        filter="url(#uno-style)"
+        letter-spacing="4px">
+    GUN
+  </text>
+  
+  <!-- The Arrow on the G (approximated position) -->
+  <path d="M 130 92 L 148 102 L 128 112 Z" fill="white" filter="url(#uno-style)" />
+</svg>
